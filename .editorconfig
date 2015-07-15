@@ -1,0 +1,17 @@
+root = true
+
+; Unix-style newlines with a newline ending every file and space identation
+[*]
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+
+; CoffeeScript
+[*.coffee]
+indent_style = space
+indent_size = 2
+
+; Jade
+[*.jade]
+indent_style = space
+indent_size = 2

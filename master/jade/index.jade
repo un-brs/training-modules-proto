@@ -1,0 +1,63 @@
+doctype html
+html(lang="en")
+  head
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css")
+    link(rel="stylesheet", href="bower_components/slick-carousel/slick/slick.css")
+    link(rel="stylesheet", href="bower_components/slick-carousel/slick/slick-theme.css")
+    link(rel="stylesheet", href="app/css/app.css")
+    script(src="bower_components/jquery/dist/jquery.js")
+    script(src="bower_components/angular/angular.js")
+    script(src="bower_components/slick-carousel/slick/slick.js")
+    script(src="bower_components/angular-slick/dist/slick.js")
+  
+  body(ng-app="app" ng-controller="IndexController as vm")
+    .container
+      .page-header
+        h1 Training Modules
+          small &nbsp;UNEP
+      .row
+        .col-md-12.trm-menu
+          slick(dots="true" infinite="false" speed="300" slides-to-show="3" touch-move="false" slides-to-scroll="1")
+            .trm-menu-block
+              .trm-menu-block-border
+                .trm-menu-block-part
+                  h3 Overview
+              .trm-menu-block-border
+                .trm-menu-block-part
+                  h3 Pops
+            .trm-menu-block
+              .trm-menu-block-border
+                .trm-menu-block-part
+                  h3 Reporting and other notification
+              .trm-menu-block-border
+                .trm-menu-block-part
+                  h3 Chemicals
+            .trm-menu-block
+              .trm-menu-block-border
+                .trm-menu-block-part
+                  h3 Wastes
+              .trm-menu-block-border
+                .trm-menu-block-part
+                  h3 National Plans and Strategies
+            .trm-menu-block
+              .trm-menu-block-border
+                .trm-menu-block-part
+                  h3 Overview
+              .trm-menu-block-border
+                .trm-menu-block-part
+                  h3 Pops
+            .trm-menu-block
+              .trm-menu-block-border
+                .trm-menu-block-part
+                  h3 Overview
+              .trm-menu-block-border
+                .trm-menu-block-part
+                  h3 Pops
+            .trm-menu-block
+              .trm-menu-block-border
+                .trm-menu-block-part
+                  h3 Overview
+              .trm-menu-block-border
+                .trm-menu-block-part
+                  h3 Pops
+    script(src="app/js/app.js")
