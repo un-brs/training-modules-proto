@@ -1,4 +1,6 @@
-app
+app/js
+app/css
+.sass-cache
 index.html
 *.sublime-*
 bower_components

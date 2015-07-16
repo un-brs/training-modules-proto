@@ -1,63 +1,112 @@
 doctype html
 html(lang="en")
   head
-    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css")
+    link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css")
     link(rel="stylesheet", href="bower_components/slick-carousel/slick/slick.css")
     link(rel="stylesheet", href="bower_components/slick-carousel/slick/slick-theme.css")
     link(rel="stylesheet", href="app/css/app.css")
+    link(href='//fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css')
     script(src="bower_components/jquery/dist/jquery.js")
     script(src="bower_components/angular/angular.js")
     script(src="bower_components/slick-carousel/slick/slick.js")
     script(src="bower_components/angular-slick/dist/slick.js")
+    script(src="bower_components/jquery-hoverIntent/jquery.hoverIntent.js")
   
   body(ng-app="app" ng-controller="IndexController as vm")
-    .container
+    .container-fixed
       .page-header
         h1 Training Modules
           small &nbsp;UNEP
       .row
-        .col-md-12.trm-menu
-          slick(dots="true" infinite="false" speed="300" slides-to-show="3" touch-move="false" slides-to-scroll="1")
-            .trm-menu-block
-              .trm-menu-block-border
-                .trm-menu-block-part
-                  h3 Overview
-              .trm-menu-block-border
-                .trm-menu-block-part
-                  h3 Pops
-            .trm-menu-block
-              .trm-menu-block-border
-                .trm-menu-block-part
-                  h3 Reporting and other notification
-              .trm-menu-block-border
-                .trm-menu-block-part
-                  h3 Chemicals
-            .trm-menu-block
-              .trm-menu-block-border
-                .trm-menu-block-part
-                  h3 Wastes
-              .trm-menu-block-border
-                .trm-menu-block-part
-                  h3 National Plans and Strategies
-            .trm-menu-block
-              .trm-menu-block-border
-                .trm-menu-block-part
-                  h3 Overview
-              .trm-menu-block-border
-                .trm-menu-block-part
-                  h3 Pops
-            .trm-menu-block
-              .trm-menu-block-border
-                .trm-menu-block-part
-                  h3 Overview
-              .trm-menu-block-border
-                .trm-menu-block-part
-                  h3 Pops
-            .trm-menu-block
-              .trm-menu-block-border
-                .trm-menu-block-part
-                  h3 Overview
-              .trm-menu-block-border
-                .trm-menu-block-part
-                  h3 Pops
+        .col-xs-12
+          img.header(src="app/images/header.png" )
+      .row
+        .col-xs-12
+          .trm-menu
+            slick(dots="true" infinite="false" speed="300" slides-to-show="3" touch-move="true" slides-to-scroll="3")
+              .trm-menu-block
+                .trm-menu-block-border
+                  .trm-menu-block-part
+                    h3 Overview
+                .trm-menu-block-border
+                  .trm-menu-block-part
+                    h3 Pops
+              .trm-menu-block
+                .trm-menu-block-border
+                  .trm-menu-block-part
+                    h3 Reporting and other notification
+                .trm-menu-block-border
+                  .trm-menu-block-part
+                    h3 Chemicals
+              .trm-menu-block
+                .trm-menu-block-border
+                  .trm-menu-block-part
+                    h3 Wastes
+                .trm-menu-block-border
+                  .trm-menu-block-part
+                    h3 National Plans and Strategies
+              .trm-menu-block
+                .trm-menu-block-border
+                  .trm-menu-block-part
+                    h3 Stakeholders
+                .trm-menu-block-border
+                  .trm-menu-block-part
+                    h3 Governing bodies
+              .trm-menu-block
+                .trm-menu-block-border
+                  .trm-menu-block-part
+                    h3 Expert groups
+                .trm-menu-block-border
+                  .trm-menu-block-part
+                    h3 Regional Centres
+              .trm-menu-block
+                .trm-menu-block-border
+                  .trm-menu-block-part
+                    h3 Effectiveness evaluation
+                .trm-menu-block-border
+                  .trm-menu-block-part
+                    h3 CHM
+      .row
+        .col-xs-12
+          .trm-content
+            .row
+              .col-xs-12
+                .trm-submenu
+                  | Overview
+            .row
+              .col-xs-12
+                .trm-submenu.active
+                  | Reporting and other notification
+            .text
+              .row
+                .col-xs-6
+                  .abstract
+                    |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos voluptatem, nemo dolores repellendus veritatis? Molestias natus praesentium, quibusdam possimus totam velit aut, vel sit autem omnis eveniet, architecto dolorum quo. 
+                  |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, magnam mollitia perferendis iure, optio distinctio hic quasi dicta expedita numquam qui perspiciatis! Unde maiores nobis molestiae nulla perspiciatis, provident id.
+                  |   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus modi nobis eos tempora eaque blanditiis beatae sint nam mollitia, repellat adipisci officia itaque iure tenetur ratione. Eligendi quisquam, est error?
+                  .start
+                    | Start course -->
+                .col-xs-6
+                  img(src="app/images/image.png")
+                  ul
+                    li  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quae impedit deserunt aliquam non, hic nihil adipisci esse recusandae perferendis, officiis saepe rem culpa, suscipit, sunt quo doloribus odio cum!
+                    li  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa excepturi, distinctio quo alias sunt iusto laboriosam, omnis incidunt debitis qui quisquam iste aliquid. Nesciunt error ullam, tenetur ea corrupti pariatur.
+                    li  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum in quas nobis porro vero commodi, consequatur, unde veritatis, eius repellat quam dolor molestias dolore laudantium ullam, repudiandae vitae non. Alias.
+            .bottom
+              .row
+                .col-xs-12
+                  .trm-submenu
+                    | Wastes
+              .row
+                .col-xs-12
+                  .trm-submenu
+                    | POPs
+              .row
+                .col-xs-12
+                  .trm-submenu
+                    | Chemicals
+              .row
+                .col-xs-12
+                  .trm-submenu
+                    | National Plans and Strategies
     script(src="app/js/app.js")
