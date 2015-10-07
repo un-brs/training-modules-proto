@@ -1,12 +1,13 @@
-@menu-color-dark: rgb(171, 25, 76);
-@menu-color-light: rgb(253, 195, 218);
-@container-width: 720px;
+@rubine-red: rgb(215,10,80);
+@container-width: 725px;
 @container-background-color: rgb(209,209,209);
 @border-radius: 3px;
-@header-font-family: 'Didact Gothic', sans-serif;
+@header-font-family: 'Questrial', sans-serif;
+@content-font-family: 'Arial';
 
 body {
   background-color: @container-background-color;
+  font-family: @content-font-family;
 }
 
 .container-fixed {
@@ -20,46 +21,37 @@ img.header {
 
 .trm-menu {
    background-color: white;
-   border-radius: @border-radius; 
+   border-radius: @border-radius;
    padding-left: 30px;
    padding-right: 30px;
    padding-bottom: 15px;
+
+   h3 {
+    font-size: 20px;
+   }
 }
 
-.trm-menu-block-border-hover {
-  background-color: hsla(0, 100%, 100%, 0.0); 
+.trm-menu-block-part-hover {
+  background-color: hsla(0, 100%, 100%, 0.0);
   opacity: .2;
 }
 
 .trm-menu-block-part {
-    color: @menu-color-dark;
+    color: @rubine-red;
     font-family: @header-font-family;
     text-transform: uppercase;
     height: 100px;
     padding-left: 20px;
     padding-right: 5px;
+    padding-bottom: 10px;
     text-align: right;
-}
 
-.trm-menu-block-border {
-    margin: 30px 0px 0px 10px;
-}
-
-.trm-menu-block-border:before, .trm-menu-block-border:after {
-    content: "";
-    height: 3px;
-    display: block;
-    background-color: @menu-color-dark;
-}
-
-.trm-menu-block-border:before {
-   background-image: linear-gradient(@menu-color-light, @menu-color-dark);
-   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='@menu-color-light', EndColorStr='@menu-color-dark');
-}
-
-.trm-menu-block-border:after {
-    background-image: linear-gradient(@menu-color-dark, @menu-color-light);
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='@menu-color-dark', EndColorStr='@menu-color-light');
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: @rubine-red;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .slick-prev:before, .slick-next:before {
@@ -75,6 +67,18 @@ img.header {
     //left: -10px;
 }
 
+// .slick-next:before {
+//   content: "▶︎"
+// }
+//
+// .slick-prev:before {
+//   content: "◀︎"
+// }
+
+.trm-menu-block:focus {
+  outline: 0px;
+}
+
 .trm-submenu {
     color: @container-background-color;
     font-family: @header-font-family;
@@ -84,24 +88,24 @@ img.header {
     padding-left: 5px;
     padding-top: 5px;
     font-size: 24px;
-} 
+}
 
 
 .trm-content {
     margin-top: 20px;
     margin-bottom: 20px;
     .active {
-        color: @menu-color-dark;
+        color: @rubine-red;
         border-bottom-style: solid;
         border-bottom-width: 3px;
-        border-bottom-color: @menu-color-dark
+        border-bottom-color: @rubine-red
     }
 
 
     .text {
         margin-top: 10px;
         .abstract {
-            color: @menu-color-dark;
+            color: @rubine-red;
             font-weight: bold;
         }
         .start {
@@ -121,8 +125,6 @@ img.header {
     .bottom > .row:first-child .trm-submenu{
         border-top-style: solid;
         border-top-width: 3px;
-        border-top-color: @menu-color-dark
+        border-top-color: @rubine-red
     }
 }
-
-

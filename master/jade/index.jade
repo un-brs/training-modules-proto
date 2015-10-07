@@ -1,17 +1,18 @@
 doctype html
 html(lang="en")
   head
+    meta(charset="UTF-8")
     link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css")
     link(rel="stylesheet", href="bower_components/slick-carousel/slick/slick.css")
     link(rel="stylesheet", href="bower_components/slick-carousel/slick/slick-theme.css")
     link(rel="stylesheet", href="app/css/app.css")
-    link(href='//fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css')
     script(src="bower_components/jquery/dist/jquery.js")
     script(src="bower_components/angular/angular.js")
     script(src="bower_components/slick-carousel/slick/slick.js")
     script(src="bower_components/angular-slick/dist/slick.js")
     script(src="bower_components/jquery-hoverIntent/jquery.hoverIntent.js")
-  
+
   body(ng-app="app" ng-controller="IndexController as vm")
     .container-fixed
       .page-header
@@ -23,49 +24,37 @@ html(lang="en")
       .row
         .col-xs-12
           .trm-menu
-            slick(dots="true" infinite="false" speed="300" slides-to-show="3" touch-move="true" slides-to-scroll="3")
+            slick(dots="true" infinite="false" speed="300" slides-to-show="3" touch-move="true" slides-to-scroll="3" focus-on-select="false")
               .trm-menu-block
-                .trm-menu-block-border
-                  .trm-menu-block-part
-                    h3 Overview
-                .trm-menu-block-border
-                  .trm-menu-block-part
-                    h3 Pops
+                .trm-menu-block-part
+                  h3 Overview
+                .trm-menu-block-part
+                  h3 Pops
               .trm-menu-block
-                .trm-menu-block-border
-                  .trm-menu-block-part
-                    h3 Reporting and other notification
-                .trm-menu-block-border
-                  .trm-menu-block-part
-                    h3 Chemicals
+                .trm-menu-block-part
+                  h3 Reporting and other notification
+                .trm-menu-block-part
+                  h3 Chemicals
               .trm-menu-block
-                .trm-menu-block-border
-                  .trm-menu-block-part
-                    h3 Wastes
-                .trm-menu-block-border
-                  .trm-menu-block-part
-                    h3 National Plans and Strategies
+                .trm-menu-block-part
+                  h3 Wastes
+                .trm-menu-block-part
+                  h3 National Plans and Strategies
               .trm-menu-block
-                .trm-menu-block-border
-                  .trm-menu-block-part
-                    h3 Stakeholders
-                .trm-menu-block-border
-                  .trm-menu-block-part
-                    h3 Governing bodies
+                .trm-menu-block-part
+                  h3 Stakeholders
+                .trm-menu-block-part
+                  h3 Governing bodies
               .trm-menu-block
-                .trm-menu-block-border
-                  .trm-menu-block-part
-                    h3 Expert groups
-                .trm-menu-block-border
-                  .trm-menu-block-part
-                    h3 Regional Centres
+                .trm-menu-block-part
+                  h3 Expert groups
+                .trm-menu-block-part
+                  h3 Regional Centres
               .trm-menu-block
-                .trm-menu-block-border
-                  .trm-menu-block-part
-                    h3 Effectiveness evaluation
-                .trm-menu-block-border
-                  .trm-menu-block-part
-                    h3 CHM
+                .trm-menu-block-part
+                  h3 Effectiveness evaluation
+                .trm-menu-block-part
+                  h3 CHM
       .row
         .col-xs-12
           .trm-content
@@ -81,7 +70,7 @@ html(lang="en")
               .row
                 .col-xs-6
                   .abstract
-                    |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos voluptatem, nemo dolores repellendus veritatis? Molestias natus praesentium, quibusdam possimus totam velit aut, vel sit autem omnis eveniet, architecto dolorum quo. 
+                    |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos voluptatem, nemo dolores repellendus veritatis? Molestias natus praesentium, quibusdam possimus totam velit aut, vel sit autem omnis eveniet, architecto dolorum quo.
                   |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, magnam mollitia perferendis iure, optio distinctio hic quasi dicta expedita numquam qui perspiciatis! Unde maiores nobis molestiae nulla perspiciatis, provident id.
                   |   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus modi nobis eos tempora eaque blanditiis beatae sint nam mollitia, repellat adipisci officia itaque iure tenetur ratione. Eligendi quisquam, est error?
                   .start
